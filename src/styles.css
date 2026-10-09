@@ -1,0 +1,9 @@
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid #b7791f; outline-offset: 4px; }
+.skip-link { position: absolute; top: 8px; left: 8px; padding: 12px 20px; background: white; z-index: 10; transform: translateY(-150%); }
+.skip-link:focus { transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

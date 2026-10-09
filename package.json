@@ -1,0 +1,37 @@
+{
+  "name": "rincon-carwash-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "playwright test",
+    "emulate": "firebase emulators:start --only hosting",
+    "deploy": "npm run build && firebase deploy --only hosting",
+    "recover:photos": "node scripts/recover-photos.mjs",
+    "test:hosting": "firebase emulators:exec --only hosting --project demo-rincon-carwash --non-interactive 'node scripts/smoke-hosting.mjs'"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "9.5.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "firebase-tools": "15.33.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}
