@@ -33,7 +33,7 @@ export const content: SiteContent = {
   name: 'Rincon Car Wash',
   startingPrice: 3,
   originalWebsite: 'https://www.rinconcarwash.com/',
-  description: 'Orange’s affordable self-serve car wash. Serving the community for over 30 years with professional-grade soaps and essential wash products.',
+  description: 'Your local self-serve car wash in Orange. Open 24/7 and serving the neighborhood for over 30 years.',
   address: '140 N Prospect St\nOrange, CA 92869',
   hours: 'Open 24 hours a day, 7 days a week.\n365 days a year.',
   phone: { label: '+1 909-248-4480', href: 'tel:+19092484480' },

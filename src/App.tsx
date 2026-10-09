@@ -31,7 +31,7 @@ export function App() {
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: heroPhoto ? '1fr 1fr' : 'minmax(0, 1.5fr) minmax(0, 1fr)' }, gap: { xs: 4, md: 7 }, alignItems: 'center' }}>
           <Box>
             <Chip label="RINCON CAR WASH" size="small" sx={{ bgcolor: '#e5eee7', fontSize: 11, letterSpacing: '.14em', fontWeight: 700, mb: 3 }} />
-            <Typography id="hero-title" variant="h1" sx={{ fontSize: { xs: '3.2rem', sm: '4.5rem', md: '5.5rem' }, maxWidth: 650 }}>A fresh start.<br /><Box component="span" sx={{ color: '#507e73' }}>A cleaner car.</Box></Typography>
+            <Typography id="hero-title" variant="h1" sx={{ fontSize: { xs: '3.2rem', sm: '4.5rem', md: '5.5rem' }, maxWidth: 650 }}>Your neighborhood wash.<br /><Box component="span" sx={{ color: '#507e73' }}>Just {formatPrice(content.startingPrice)} to start.</Box></Typography>
             <Typography sx={{ mt: 3, maxWidth: 460, fontSize: 19, lineHeight: 1.75, color: 'text.secondary' }}>{content.description ?? 'Make a little time for a little shine. Start your next wash at Rincon Car Wash.'}</Typography>
             <Stack direction="row" spacing={2} useFlexGap sx={{ mt: 4, flexWrap: "wrap" }}>
               <Button variant="contained" href={content.directionsUrl ?? '#pricing'}>{content.directionsUrl ? 'Get directions' : 'View pricing'}<Box component="span" aria-hidden="true" sx={{ ml: 2 }}>↗</Box></Button>
