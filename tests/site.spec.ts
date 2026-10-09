@@ -9,6 +9,11 @@ test('renders the new starting price and pricing navigation without errors', asy
   await page.getByRole('navigation', { name: 'Main navigation' }).getByRole('link', { name: 'Pricing' }).click();
   await expect(page).toHaveURL(/#pricing$/);
   await expect(page.locator('#pricing')).toContainText('$3');
+  const contact = page.getByRole('link', { name: 'Contact us', exact: true });
+  await expect(contact).toHaveAttribute('href', '#visit');
+  await contact.click();
+  await expect(page).toHaveURL(/#visit$/);
+  await expect(page.locator('#visit').getByRole('link', { name: content.phone!.label, exact: true })).toBeVisible();
   await expect(page.locator('body')).not.toContainText('$2.50');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect(errors).toEqual([]);

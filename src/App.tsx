@@ -31,11 +31,11 @@ export function App() {
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: heroPhoto ? '1fr 1fr' : 'minmax(0, 1.5fr) minmax(0, 1fr)' }, gap: { xs: 4, md: 7 }, alignItems: 'center' }}>
           <Box>
             <Chip label="RINCON CAR WASH" size="small" sx={{ bgcolor: '#e5eee7', fontSize: 11, letterSpacing: '.14em', fontWeight: 700, mb: 3 }} />
-            <Typography id="hero-title" variant="h1" sx={{ fontSize: { xs: '3.2rem', sm: '4.5rem', md: '5.5rem' }, maxWidth: 650 }}>Your neighborhood wash.<br /><Box component="span" sx={{ color: '#507e73' }}>Just {formatPrice(content.startingPrice)} to start.</Box></Typography>
+            <Typography id="hero-title" variant="h1" sx={{ fontSize: { xs: '3.2rem', sm: '4.5rem', md: '5.5rem' }, maxWidth: 650 }}><Box component="span" sx={{ display: 'block', fontSize: { xs: '2.4rem', sm: '3.3rem', md: '4rem' }, fontWeight: 600, letterSpacing: '-.035em', mb: 2 }}>Your neighborhood wash.</Box>{' '}<Box component="span" sx={{ display: 'block', color: '#507e73' }}>Just {formatPrice(content.startingPrice)} to start.</Box></Typography>
             <Typography sx={{ mt: 3, maxWidth: 460, fontSize: 19, lineHeight: 1.75, color: 'text.secondary' }}>{content.description ?? 'Make a little time for a little shine. Start your next wash at Rincon Car Wash.'}</Typography>
             <Stack direction="row" spacing={2} useFlexGap sx={{ mt: 4, flexWrap: "wrap" }}>
               <Button variant="contained" href={content.directionsUrl ?? '#pricing'}>{content.directionsUrl ? 'Get directions' : 'View pricing'}<Box component="span" aria-hidden="true" sx={{ ml: 2 }}>↗</Box></Button>
-              {content.phone && <Button variant="outlined" href={content.phone.href}>Call us</Button>}
+              {content.phone && <Button variant="outlined" href="#visit">Contact us</Button>}
             </Stack>
           </Box>
           {heroPhoto
@@ -71,8 +71,8 @@ export function App() {
 
       {content.photos.length > 1 && <Container component="section" aria-labelledby="photos-title" sx={{ py: { xs: 6, md: 8 } }}>
         <Typography id="photos-title" variant="h2" sx={{ fontSize: { xs: 36, md: 48 }, mb: 4 }}>Around the wash</Typography>
-        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 3, maxWidth: 800 }}>
-          {content.photos.slice(1).map(photo => <Box component="figure" key={photo.src} sx={{ m: 0 }}><Box component="img" src={photo.src} alt={photo.alt} loading="lazy" sx={{ display: 'block', width: '100%', maxWidth: 380, aspectRatio: '1', objectFit: 'cover', borderRadius: '20px' }} /><Typography component="figcaption" sx={{ mt: 2, fontWeight: 700 }}>{photo.label}</Typography></Box>)}
+        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }, gap: 3 }}>
+          {content.photos.slice(1).map(photo => <Box component="figure" key={photo.src} sx={{ m: 0 }}><Box component="a" href={photo.src} target="_blank" rel="noopener noreferrer" aria-label={`View ${photo.label} photo at full size`} sx={{ display: 'block' }}><Box component="img" src={photo.src} alt={photo.alt} loading="lazy" sx={{ display: 'block', width: '100%', maxWidth: 380, aspectRatio: '1', objectFit: 'contain', borderRadius: '20px' }} /></Box><Typography component="figcaption" sx={{ mt: 2, fontWeight: 700 }}>{photo.label}</Typography></Box>)}
         </Box>
       </Container>}
 

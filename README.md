@@ -6,7 +6,7 @@ A simple, responsive React + TypeScript website using MUI and Vite, prepared for
 
 The site includes the original hours, payment options, contact information, exact map embed URL, email link, and tutorial video URL. The starting price is now $3; essential products remain $1.50 each.
 
-All 13 images supplied in the owner's Google Drive folder are archived in `public/photos/` and served locally. The car-washing photo appears in the hero, the exterior and wash-bay photos in the gallery, eight labeled product images in the essentials section, and the price icon and accepted-card logos beside the pricing/payment information. Photos no longer depend on Google Sites or Drive at runtime.
+All 14 images supplied through the owner's Google Drive links are archived in `public/photos/` and served locally. The car-washing photo appears in the hero, the exterior, wash-bay, and control-panel photos in the gallery, eight labeled product images in the essentials section, and the price icon and accepted-card logos beside the pricing/payment information. Photos no longer depend on Google Sites or Drive at runtime.
 
 ## Development
 
@@ -36,7 +36,7 @@ npm test
 npm run test:hosting
 ```
 
-Tests exercise the production build at desktop and mobile sizes, check navigation and the $3 price, and check that every local image loads and map, video, and contact destinations match the original site. The Hosting smoke test verifies all 13 archived images are served with the expected content types and checksums. These checks do not prove that external map/video services work.
+Tests exercise the production build at desktop and mobile sizes, check navigation and the $3 price, and check that every local image loads and map, video, and contact destinations match the original site. The Hosting smoke test verifies all 14 archived images are served with the expected content types and checksums. These checks do not prove that external map/video services work.
 
 ## Firebase Hosting
 
