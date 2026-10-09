@@ -39,7 +39,7 @@ export function App() {
             </Stack>
           </Box>
           {heroPhoto
-            ? <Box component="img" src={heroPhoto.src} alt={heroPhoto.alt} fetchPriority="high" sx={{ width: '100%', aspectRatio: '4 / 5', objectFit: 'cover', borderRadius: 6 }} />
+            ? <Box component="img" src={heroPhoto.src} alt={heroPhoto.alt} fetchPriority="high" sx={{ width: '100%', aspectRatio: { xs: '3 / 2', md: '4 / 5' }, objectFit: 'cover', objectPosition: '65% center', borderRadius: '24px' }} />
             : <Paper elevation={0} sx={{ bgcolor: 'primary.main', color: 'white', p: { xs: 4, md: 5 }, borderRadius: 6, minHeight: 330, display: 'flex', flexDirection: 'column', justifyContent: 'space-between', backgroundImage: 'radial-gradient(circle at 90% 10%, #507e73 0, transparent 55%)' }}>
               <Typography sx={{ letterSpacing: '.14em', fontSize: 12 }}>YOUR NEXT WASH</Typography>
               <Box><Typography sx={{ color: '#c6eae3' }}>Starts at</Typography><Typography component="p" sx={{ fontSize: { xs: 90, md: 120 }, lineHeight: 1.15, letterSpacing: '-.06em', fontWeight: 700 }}>{formatPrice(content.startingPrice)}</Typography></Box>
@@ -51,13 +51,14 @@ export function App() {
       <Box component="section" id="pricing" aria-labelledby="pricing-title" sx={{ bgcolor: '#e8efe9', py: { xs: 6, md: 8 }, scrollMarginTop: 24 }}>
         <Container>
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' }, gap: 4, alignItems: 'center' }}>
-            <Box><Typography component="p" sx={{ fontSize: 12, fontWeight: 700, letterSpacing: '.15em', mb: 2 }}>SIMPLE PRICING</Typography><Typography id="pricing-title" variant="h2" sx={{ fontSize: { xs: 36, md: 48 } }}>A little change.<br />A fresh shine.</Typography></Box>
+            <Box><Stack direction="row" spacing={1.5} sx={{ alignItems: 'center', mb: 2 }}><Box component="img" src={content.pricingIcon.src} alt={content.pricingIcon.alt} sx={{ width: 40, height: 40 }} /><Typography component="p" sx={{ fontSize: 12, fontWeight: 700, letterSpacing: '.15em' }}>SIMPLE PRICING</Typography></Stack><Typography id="pricing-title" variant="h2" sx={{ fontSize: { xs: 36, md: 48 } }}>A little change.<br />A fresh shine.</Typography></Box>
             <Paper elevation={0} sx={{ p: 4, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 3, border: '1px solid #d8e3da' }}>
               <Box><Typography variant="h3" sx={{ fontSize: 24 }}>Start your wash</Typography><Typography color="text.secondary" sx={{ mt: 1 }}>Starting price</Typography></Box>
               <Typography sx={{ fontSize: { xs: 60, sm: 80 }, letterSpacing: '-.06em', fontWeight: 700 }}>{formatPrice(content.startingPrice)}</Typography>
             </Paper>
           </Box>
           <Typography sx={{ mt: 3, maxWidth: 650, color: 'text.secondary', lineHeight: 1.8 }}>{content.payments}</Typography>
+          <Box component="img" src={content.paymentLogos.src} alt={content.paymentLogos.alt} loading="lazy" sx={{ display: 'block', width: 160, height: 'auto', mt: 2 }} />
         </Container>
       </Box>
 
@@ -70,8 +71,8 @@ export function App() {
 
       {content.photos.length > 1 && <Container component="section" aria-labelledby="photos-title" sx={{ py: { xs: 6, md: 8 } }}>
         <Typography id="photos-title" variant="h2" sx={{ fontSize: { xs: 36, md: 48 }, mb: 4 }}>Around the wash</Typography>
-        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 3 }}>
-          {content.photos.slice(1).map(photo => <Box key={photo.src} component="img" src={photo.src} alt={photo.alt} loading="lazy" sx={{ width: '100%', aspectRatio: '4 / 3', objectFit: 'cover', borderRadius: 5 }} />)}
+        <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)' }, gap: 3, maxWidth: 800 }}>
+          {content.photos.slice(1).map(photo => <Box component="figure" key={photo.src} sx={{ m: 0 }}><Box component="img" src={photo.src} alt={photo.alt} loading="lazy" sx={{ display: 'block', width: '100%', maxWidth: 380, aspectRatio: '1', objectFit: 'cover', borderRadius: '20px' }} /><Typography component="figcaption" sx={{ mt: 2, fontWeight: 700 }}>{photo.label}</Typography></Box>)}
         </Box>
       </Container>}
 
@@ -82,6 +83,7 @@ export function App() {
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: 'repeat(2, minmax(0, 1fr))', md: 'repeat(4, minmax(0, 1fr))' }, gap: 2 }}>
             {content.essentials.map(photo => <Paper key={photo.src} elevation={0} sx={{ p: 2.5 }}>
               <Box component="img" src={photo.src} alt={photo.alt} loading="lazy" sx={{ width: '100%', aspectRatio: '1', objectFit: 'contain' }} />
+              <Typography component="h3" sx={{ textAlign: 'center', fontWeight: 700, fontSize: 15, mt: 2 }}>{photo.label}</Typography>
               <Typography sx={{ textAlign: 'center', fontWeight: 700, mt: 2 }}>{formatPrice(content.essentialsPrice)}</Typography>
             </Paper>)}
           </Box>

@@ -6,7 +6,7 @@ A simple, responsive React + TypeScript website using MUI and Vite, prepared for
 
 The site includes the original hours, payment options, contact information, exact map embed URL, email link, and tutorial video URL. The starting price is now $3; essential products remain $1.50 each.
 
-Original photographs and product images are referenced using the original site's URLs. **Local photo recovery is still blocked by the cloud network policy for `lh7-us.googleusercontent.com`.** Recover and inspect these images before launch: they should be stored in this repository rather than depending on Google Sites URLs. The original two pricing illustrations are archived by the recovery script but replaced in the UI by MUI text pricing cards, avoiding an outdated price baked into an image.
+All 13 images supplied in the owner's Google Drive folder are archived in `public/photos/` and served locally. The car-washing photo appears in the hero, the exterior and wash-bay photos in the gallery, eight labeled product images in the essentials section, and the price icon and accepted-card logos beside the pricing/payment information. Photos no longer depend on Google Sites or Drive at runtime.
 
 ## Development
 
@@ -17,17 +17,15 @@ npm ci
 npm run dev
 ```
 
-Update `src/content.ts` for business information and pricing. `src/photos.json` records all 15 source image URLs and their roles. The first photo is the hero; four more appear in the gallery and eight product images appear in the essentials section. Keep original map and external destinations as supplied by the existing site.
+Update `src/content.ts` for business information and pricing. `src/photos.json` records filenames, source URLs, image descriptions, product names, roles, and checksums. Keep original map and external destinations as supplied by the existing site.
 
-To archive the original images locally (requires curl and access to the image host):
+The images are committed to this repository, so no separate download or environment flag is needed to develop or deploy. To verify the archives or recover a missing file (requires curl and access to the shared Drive download URL):
 
 ```sh
 npm run recover:photos
-cp .env.example .env
-npm run build
 ```
 
-`VITE_LOCAL_PHOTOS=true` switches the site to your local copies. Verify all images render and their descriptions are accurate before publishing. No generated or stock photos replace the originals.
+The recovery command verifies checksums and refuses to overwrite modified images. New business photos can be placed under `public/photos/` and registered in `src/photos.json`. The supplied images retain their original bytes; file extensions match the actual JPEG or PNG format.
 
 ## Validation
 
@@ -38,7 +36,7 @@ npm test
 npm run test:hosting
 ```
 
-Tests exercise the production build at desktop and mobile sizes, check navigation and the $3 price, and check loaded images and exact map, video, and contact destinations. They do not prove that external map/video services work. Image tests fail if the originals are blocked or the local copies are missing; this must be resolved rather than skipping those checks.
+Tests exercise the production build at desktop and mobile sizes, check navigation and the $3 price, and check that every local image loads and map, video, and contact destinations match the original site. The Hosting smoke test verifies all 13 archived images are served with the expected content types and checksums. These checks do not prove that external map/video services work.
 
 ## Firebase Hosting
 

@@ -27,8 +27,9 @@ test('preserves the original map, tutorial, and contact destinations', async ({ 
 
 test('loads the original photographs and product images', async ({ page }) => {
   await page.goto('/');
-  expect(await page.getByRole('main').locator('img').count()).toBe(content.photos.length + content.essentials.length);
+  expect(await page.getByRole('main').locator('img').count()).toBe(content.photos.length + content.essentials.length + 2);
   for (const image of await page.locator('img').all()) {
+    await expect(image).toHaveAttribute('src', /^\/(photos\/|favicon\.svg$)/);
     await image.scrollIntoViewIfNeeded();
     await expect(image).toHaveJSProperty('complete', true);
     await expect.poll(() => image.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);

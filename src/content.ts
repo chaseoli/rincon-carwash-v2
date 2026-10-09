@@ -4,6 +4,7 @@ import originalPhotos from './photos.json' with { type: 'json' };
 export interface Photo {
   src: string;
   alt: string;
+  label?: string;
 }
 
 interface SiteContent {
@@ -20,13 +21,16 @@ interface SiteContent {
   payments: string;
   essentialsPrice: number;
   essentials: Photo[];
+  pricingIcon: Photo;
+  paymentLogos: Photo;
   photos: Photo[];
   links: { label: string; href: string }[];
 }
 
-const toPhoto = (photo: { url: string; file: string; alt: string }): Photo => ({
-  src: import.meta.env?.VITE_LOCAL_PHOTOS === 'true' ? `/photos/${photo.file}` : photo.url,
+const toPhoto = (photo: { file: string; alt: string; label: string }): Photo => ({
+  src: `/photos/${photo.file}`,
   alt: photo.alt,
+  label: photo.label,
 });
 
 export const content: SiteContent = {
@@ -44,6 +48,8 @@ export const content: SiteContent = {
   essentialsPrice: 1.5,
   photos: originalPhotos.filter(photo => ['hero', 'gallery'].includes(photo.role)).map(toPhoto),
   essentials: originalPhotos.filter(photo => photo.role === 'essential').map(toPhoto),
+  pricingIcon: toPhoto(originalPhotos.find(photo => photo.role === 'pricing')!),
+  paymentLogos: toPhoto(originalPhotos.find(photo => photo.role === 'payment')!),
   links: [{ label: 'help@rinconcarwash.com', href: 'mailto:help@rinconcarwash.com' }],
 };
 

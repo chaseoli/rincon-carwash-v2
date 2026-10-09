@@ -1,92 +1,119 @@
 [
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tbvHr8u6CYDM8gmiImO3XIlSxOx3jbS39YnrJB3bi19Tl_-Wasqn6DVSGA6FoDO5l2Glc6ic4iXHH94SyHZwuGdnbUjuduyXDrxx0EPf_SQbiUEquu9uuuwHbkff3amvQw1raiUZrkSU4hx-AedgCSYKK48dBhC4367rUBaNhdTR8c5AKMkksiAfgcnKs=w16383",
-    "file": "original-hero.jpg",
+    "file": "washing-car.jpg",
     "role": "hero",
-    "alt": "Rincon Car Wash"
+    "alt": "A person spraying water on a car",
+    "label": "",
+    "url": "https://drive.usercontent.google.com/download?id=1YVnirJq9B7KmP7LVwYmIjdH-jNdv540u&export=download&authuser=0&confirm=t",
+    "sourceName": "background photo guy washing car.jpg",
+    "sha256": "648a03168c00d27cda756651592d768270ac0d32f2dfab3dd72a2abf6f2a1ca7"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72v3BWHbys5Zcd_J6zIH7hzu0JcmJ28vOJL9m0VfEiNVjS8JHwvZfrwe2Lg8VQdFxWMtvz9k5izUG12IIaenk9nVkYwMJU-4TssP8z-qbjwfGK2UD7476Bd7BkfhTUpNxQViX0kndhxD1gJmVkWe4GCDHyVZjfLMPPdx54bnTL5HBp2dvdPaaL08a87snyLkXsgA-UOLjTs7vQ0mJvw84FLTj5o3V2GWalxC2bxY32U=w1280",
-    "file": "original-01.jpg",
+    "file": "car-wash-exterior.jpg",
     "role": "gallery",
-    "alt": "Rincon Car Wash \u2014 photo 1"
+    "alt": "Street view of Rincon Car Wash",
+    "label": "Your neighborhood car wash",
+    "url": "https://drive.usercontent.google.com/download?id=1uSEPHi1jjWv3nH3NkOMH1PF5JGVSg1I9&export=download&authuser=0&confirm=t",
+    "sourceName": "exterior of carwash picture.jpg",
+    "sha256": "2b11393c4c76230d9860415b2b93449b7a4004fe8208cb93215811bc4cd4578f"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vIPVvStCB420PelxqfkHq5_Dbtq1O50oU-b1xnAVPhHGSaRLtBxLgHNXvB2WTT-WCInzfkAfwHEpPnD61K36AiAOudNYsXCbj-Zvz9divP8GqdjtZjdYI3KzEZqetyBagY3XoXH8aByW6a4bSGH-YPIQQzAXXcqpLtgp4aSV4NFMtNKISjIkaQAj2Fb-JdYZAwllfqfvaa2QpmYvH1yDbPNqnbsCWeVttjKA_1=w1280",
-    "file": "original-02.jpg",
+    "file": "self-serve-wash-bay.jpg",
     "role": "gallery",
-    "alt": "Rincon Car Wash \u2014 photo 2"
+    "alt": "A car parked in a self-serve wash bay at Rincon Car Wash",
+    "label": "Self-serve wash bay",
+    "url": "https://drive.usercontent.google.com/download?id=101YnlIXNK_ttHvGdRRzjNAqUvHz0MZlN&export=download&authuser=0&confirm=t",
+    "sourceName": "car in bay.jpg",
+    "sha256": "58f9719d7cb07d7e61841d29d3422838d62dd0b74ddb959fe0beaa8641789631"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tbqp3-E0hnyCdbej6V9-QLuB0qEVFNhbxJBzpRlMhBzkE-uyldetqgdt_glio6qm6l-aqHLmEZ1nMs585npPEXeUkkcpy09aF5Dtm1f9Y5nvaNbeUOIkEX2STa83VCSknhNbE-pQJc6Inwx60WdG6mjBx9rJWZDiMDXoc27IDxHgz15raILBQPk2dp3y2H0QhhfdoKJZObn7ynzS-Gd-Jbz-Sa0iaMTS0zsaQns-U=w1280",
-    "file": "original-03.jpg",
-    "role": "gallery",
-    "alt": "Rincon Car Wash \u2014 photo 3"
+    "file": "price-tag.png",
+    "role": "pricing",
+    "alt": "",
+    "label": "",
+    "url": "https://drive.usercontent.google.com/download?id=1umP2ZzLAu7lcFqGVVzkifh_8TWN2l8TM&export=download&authuser=0&confirm=t",
+    "sourceName": "price tag icon.jpg",
+    "sha256": "0d7ef03abf9d25b75b52c8bf3b1882fae96ea17a736d0f46771bc5733a7f9f53"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vSbIXMA1mghBTZ4kstZtuXP1OUxvP0DjFU0Ko7XmR5Y53_8MWhQl1AEbRoYOQkHi2coZmEgW65_9RAJXzhwtiAjRxqBaJTEhkFuilRGGtlFyHJWh8deCG_dO7viXcEX_KGjc1uofpupjqV3GJbTOfii1h55OjiEi50ykqdX-oAYHLwdpExffH787jw_wBLS_JbWi_hRN1wyNs7hbqMZS505AxRuSPtLLhF1ChR=w1280",
-    "file": "original-04.jpg",
-    "role": "gallery",
-    "alt": "Rincon Car Wash \u2014 photo 4"
+    "file": "accepted-cards.png",
+    "role": "payment",
+    "alt": "Visa and Mastercard accepted",
+    "label": "",
+    "url": "https://drive.usercontent.google.com/download?id=1bLePPsmdBzN7oejhqb26reb3oaBEj0wN&export=download&authuser=0&confirm=t",
+    "sourceName": "visa and master card.jpg",
+    "sha256": "a28ca202fb2770cdc75ae1626d2a9d0e1c9f962a83d673b39922c260c63c439a"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vIx7lYIjn01_mjJUC2XvEfe6B9N5FMSg6XtDY2Cc2BBkik4Iseqirv2b9y8-E-0EzgVF57AGn2jX9P1XaEe8UkcoNTnHHHOAqRL7kkL1VzXBYuhZpHvovSDqzOQbFzt7avRfixhPbkxPXLiBdjUa3OXHWNxZM4BSDCoCiwz6thP5X_xhAt8Enj8Hnq=w1280",
-    "file": "original-05.jpg",
-    "role": "legacy-pricing",
-    "alt": "Original pricing illustration"
-  },
-  {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72sTkAzBPhBsZmuNrWH-dQWATQasA3YXjjBnT_LrJ9nbyTLscvyGOl7BkuT18XYt39xLZIE_LsuMHUm9Kcr57sfvZe6URylV1Lt-13caRaw5zN8cYLpSdyv9y430THoRMOOSpCA9tYLEQ3ucuboq3wU-xxi3W4k_eoCgH3vyYN89-be2FrooU7gg0E80owfQ36HK-WvQxkwhIMT_L1t5DjftZKZt2_dlrVS-mMhIP5A=w1280",
-    "file": "original-06.jpg",
-    "role": "legacy-pricing",
-    "alt": "Original pricing illustration"
-  },
-  {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vObBhVWkIZptSkqX6TtoBs5mvMiGdmngCh1zHUa3dIffNH5QusTlU8f5hh9kkzd4oXtsTXRbnVvSnGVsOjhMwApKLwOnUMzHSPrAynluBs1SRVPw7js7iiAcn41d4_Y29QcwGcjQUw4qy1wEewsJgQdawpIKqc978eR-av4gg5HUpWpOq11JKnZltcItE=w1280",
-    "file": "original-07.jpg",
+    "file": "towels.jpg",
     "role": "essential",
-    "alt": "Essential wash product 1"
+    "alt": "Blue car-cleaning towels",
+    "label": "Towels",
+    "url": "https://drive.usercontent.google.com/download?id=1-ZObvuIUAlYu5DM6ZEtBICJxgi9ZdPGP&export=download&authuser=0&confirm=t",
+    "sourceName": "towels.jpg",
+    "sha256": "9afc75e3fa927cab18006894244137a43393297201b7eb306e6c868b7ea57fce"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tMA5A7FodOFUljLeIsMookaCMvNaCS9s2nbtLM7-ickZMaPO0MVWnC0XgF-anyy2ENbkY4pokkGq-jYnHGdeeIOi40nHZdMTyEWn9dERy_W0EDzCrrwieikG3pF9ugP-rl-r41lJORUy-78f7MgV2a-OrcmjLrCM3UBRAxcG5bQ3KLH3ndNXy3PH1O0vc=w1280",
-    "file": "original-08.jpg",
+    "file": "glass-cleaner.jpg",
     "role": "essential",
-    "alt": "Essential wash product 2"
+    "alt": "BlueMagic glass cleaner packet",
+    "label": "Glass cleaner",
+    "url": "https://drive.usercontent.google.com/download?id=1SfuWoakJfQ-gRXOmMdlNBGWV_M4-wRBq&export=download&authuser=0&confirm=t",
+    "sourceName": "glass cleaner.jpg",
+    "sha256": "582a9b05cf28dd0061e569111d8fd8208f427b523525d8f46aaaeb0f39ca2dfa"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72sB6KV1ZGSI3j96gIekRowQCUtSG2Y97Ijy75YlBjUnDV31NhY3gX4j4nHD_B1UyRlDQvs9zbTAL_-mQPWFqID-UeEpjUHV6FaJPN37Ll01AWazUp3FbPS8h1ETcaU1trqKIHncGXcoJt2FLnrglOZi-h9Ax4RHIuvWkFSg3-CpRk7e-79KqMJIxN0n1Xw=w1280",
-    "file": "original-09.jpg",
+    "file": "vinyl-cleaner.jpg",
     "role": "essential",
-    "alt": "Essential wash product 3"
+    "alt": "BlueMagic Vinyl & More cleaner packet",
+    "label": "Vinyl cleaner",
+    "url": "https://drive.usercontent.google.com/download?id=1jDtIU6v0ZT3CJTV4LMBFp1nqyVvtlzo7&export=download&authuser=0&confirm=t",
+    "sourceName": "vinyl cleaner.jpg",
+    "sha256": "84781dbba178ed55c53dd95b6aa8601704b9a4f67929304055090f6508a63f4a"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72tnS9sBLPQof6Dq91EIEMfFoV3YFb5pfoSgr83o5rBdTdLVcCxvOfdWvyRFTrw-WTHflaxESvqoePE0JXZt-WDTAMab-9_85M8RmeciAjKMRdJ-ak69h7fM9QEbIBboVlv7QjuezaN5RdTVB1CgCCjjNDGdBDJO5K7Ifuxa5OVEF8-0VB9_hsjNy_trQJQ=w1280",
-    "file": "original-10.jpg",
+    "file": "tire-shine.jpg",
     "role": "essential",
-    "alt": "Essential wash product 4"
+    "alt": "Black Jack tire shine packet",
+    "label": "Tire shine",
+    "url": "https://drive.usercontent.google.com/download?id=1yy0woGWJVKUIkgHnnmhBAIOivlp7-NFv&export=download&authuser=0&confirm=t",
+    "sourceName": "tire shine..jpg",
+    "sha256": "abffbcbc5d161bd41210b5fc35aae5d188e7f54725920581bb3360bb53062c99"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vUM8Qu4qHGyCyk-6V6l16_fYz7Ny3oo300bSLujFusvJIUMyZhTLAA_mjS4QB62fAbq7-UKEa-b45jdPmO6VKscH5lV6i3FL8RcRdwjMNx6hRi-BPJsWejbRM-O3AHhdGemwb8xWaBPBMMg5b6ETbIgINqIeyJnKXJdUvrkdXjZh4MozCsnDFXyMJqX5uXmGyYqWhMhV4yX2ab52tDxg4WXZrWcGh8gpbFVQNsg-s=w1280",
-    "file": "original-11.jpg",
+    "file": "strawberry-air-freshener.png",
     "role": "essential",
-    "alt": "Essential wash product 5"
+    "alt": "Little Trees Strawberry air freshener",
+    "label": "Strawberry air freshener",
+    "url": "https://drive.usercontent.google.com/download?id=14wXxW84YX3X72ruKLLWX3fd0vKDBdb_j&export=download&authuser=0&confirm=t",
+    "sourceName": "air freshner.jpg",
+    "sha256": "f83e08c4861b204e9588d2d6c35727670600a9c83527c81fb06bad5f28b8862d"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72v1-AyFDYGNxtlsVZDZfUErv-E3mRHlXpoKfM1h2uxMeFghaj2y9uRh4BAyuYuO2JCL9ygpNdVde4lCp5m8NhshNc6HZxR0V_dUkiRw44CyTG2kShvjIQricFwQa4twV0SieDqh0TXFRnEHBpI85Kp3IXu9OvYgfAR6Clk8I0IVslkMfGPapHdE9VqwJ4lEEJRuvj0qplYCxcgix7G9_9YKbyAMCukJRgFt6kEi=w1280",
-    "file": "original-12.jpg",
+    "file": "black-ice-air-freshener.png",
     "role": "essential",
-    "alt": "Essential wash product 6"
+    "alt": "Little Trees Black Ice air freshener",
+    "label": "Black Ice air freshener",
+    "url": "https://drive.usercontent.google.com/download?id=1LjdHLMIaXxMGhBvphvl60D1Dy8RV3dSR&export=download&authuser=0&confirm=t",
+    "sourceName": "black ice air freshner.jpg",
+    "sha256": "efc75cb357dfa0c90c811227631f29ad09d3e30a21f411de578ff377a34128c1"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vX_Mnknv8TbiafbV35sr7ZeiqQqkTANPqaTbKp-M0Za1MVEb2cbSD5abzCnIO96NQNqEym0hbNwHBgn55SR47_Rtv5TMJ88zHhM159FufGv7yOrbI-Xsod__lLTsVTwsZ4RPNQ2M5Wlizs56Vc7AAz8YlRi4zgLi6gHa-C4OwmmrjI0Re3urJAF-CywEJKr4Z98X_qYiXvDRl5NB9nu53OwBK_6X8GpkM15VWT9G4=w1280",
-    "file": "original-13.jpg",
+    "file": "new-car-air-freshener.png",
     "role": "essential",
-    "alt": "Essential wash product 7"
+    "alt": "Little Trees New Car Scent air freshener",
+    "label": "New Car Scent air freshener",
+    "url": "https://drive.usercontent.google.com/download?id=1pEOGZdl2yi2wRJ8NmOlFm1BE6UzzOMMr&export=download&authuser=0&confirm=t",
+    "sourceName": "new car smell air freshner.jpg",
+    "sha256": "1037a22c11545931edb72268e963a7765e89fe73158abc7080a440c1803aad19"
   },
   {
-    "url": "https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vNPo8ueFnASSw3V6CxWqLayyTOyO-T8HWvUx8paL-yUnjujlj4Y8e6wbVKx3-Dj73mgU1rDhcKFl8S5HskZKDYsgCuUtPvdNgelf2NMdr1w2wEo8a6x7qLUMbsRBk_ka5rpfHiZxPQAAyfoLmNKjhQ_Q3DBtm96MsOAJjjmoNja7OBwfrTfvJMVDksSvlINj7YEdqoK_zM0xONSIFa7nEjiDg=w1280",
-    "file": "original-14.jpg",
+    "file": "royal-pine-air-freshener.png",
     "role": "essential",
-    "alt": "Essential wash product 8"
+    "alt": "Little Trees Royal Pine air freshener",
+    "label": "Royal Pine air freshener",
+    "url": "https://drive.usercontent.google.com/download?id=1xSy0Qvr_v8eG2GLbvVnRIBFuAQcqd0TW&export=download&authuser=0&confirm=t",
+    "sourceName": "pine tree air freshner.jpg",
+    "sha256": "ee75b465310ee2fa45e775672769804ab10afa80cbc96cd1e677e39df73627e1"
   }
 ]
